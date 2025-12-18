@@ -1,0 +1,17 @@
+let colors = [
+    "red",
+    "blue",
+    "green",
+    "purple",
+    "orange",
+    "pink",
+    "yellow",
+    "cyan"
+];
+
+function bgColorChanger() {
+    let randomNum = Math.floor(Math.random() * colors.length);
+    let color = colors[randomNum];
+    document.getElementById("bgcolor").innerHTML = color;
+    document.body.style.backgroundColor = color;
+}
